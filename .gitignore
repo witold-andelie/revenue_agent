@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+.pytest_cache/
+__pycache__/
+*.py[cod]
+.codegraph/
+*.jsonl
+*.db
+rust/target/
+data/*.json
+*.egg-info/
+.venv/
+venv/
+.envrc
+secrets/
+*.secrets.*

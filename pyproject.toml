@@ -1,0 +1,19 @@
+[project]
+name = "revenue-agent"
+version = "0.1.0"
+description = "Auditable research and paper-trading core for an autonomous revenue agent"
+requires-python = ">=3.11"
+dependencies = [
+    "requests>=2.31",
+    "yfinance>=0.2",
+]
+
+[project.scripts]
+revenue-agent = "revenue_agent.cli:main"
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
